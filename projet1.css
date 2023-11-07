@@ -67,4 +67,25 @@ a{
 
 #produits{
     background-color: orange;
+    display: flex;
+    gap: 16px;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.produit{
+    background: cyan;
+    width: 30%;
+}
+
+.produit img{
+    width: 100%;
+}
+.produit .informations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
 }
