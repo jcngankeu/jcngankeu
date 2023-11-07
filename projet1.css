@@ -1,0 +1,70 @@
+body{
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      height: auto;
+      margin: 0;
+      background-color: white; /* couleurd fond du menu en blanc */
+      position: sticky; /* permet à un élément de rester coller */
+      top: 0;
+      background-color: pink;
+    }
+nav ul{
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        list-style: none; /* enleve les puces devant les élémnts de la liste */
+        padding: 0;
+        width: 100%;
+        background-color: green;/*couleur de fond de la liste de menu*/
+   }
+nav a {  display: block;
+            text-decoration: none;
+            color: black;
+     }
+ nav a:hover{  /* mettre en relief un élément du menu une fois survolé d'ou usage du pseudo classe : hover*/
+         color: orange;
+         border-bottom: 2px solid gold;  
+    }
+nav a { 
+            display: block;
+            text-decoration: none;
+            color: black;
+            border-bottom: 2px solid transparent; /* ajout de bordure de meme hauteur */
+            padding: 10px 0px;
+         }
+  nav li{
+          /* float: left; */ /*supprime les puces devant les éléments de la liste 
+                 on peut aussi utilser display: inline-block;*/
+          /* width: 17%; */
+          text-align: center;
+          padding: 0;
+       }
+nav li ::after{  /* usage des pseudo-éléments ::after */
+    content: "";
+    display: table;
+   /* display: inline-block;*/
+    clear: both;
+}
+h1, h2{ 
+     font-weight: 900;
+     text-transform: uppercase;
+}
+.logo-container{
+    display: flex;
+    gap: 16px;
+}
+a{
+    text-decoration: none; /*suppression de surlignement */
+}
+
+#produits{
+    background-color: orange;
+}
