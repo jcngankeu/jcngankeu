@@ -60,7 +60,45 @@ h1, h2{
 .logo-container{
     display: flex;
     gap: 16px;
+    border-radius: 16px;
 }
+
+.button {
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: all .3s ease;
+  }
+  
+  
+  .primary {
+    background-color: #8005F2;
+    color: #FFF;
+    border: 2px solid #8005F2;
+    /*
+    background: rgb(181,105,252);
+    background: linear-gradient(90deg, rgba(181,105,252,1) 0%, rgba(128,5,242,1) 36%, rgba(181,105,252,1) 100%);*display: ;*/
+  }
+  
+  .primary:hover {
+    background-color: #B569FC;
+    border: 2px solid #B569FC;
+  }
+  
+  .secondary {
+    background-color: transparent;
+    color: #8005F2;
+    border: 2px solid #8005F2;
+  }
+  
+  .secondary:hover {
+    border: 2px solid #B569FC;
+    color: #B569FC;
+  }
+  
+
 a{
     text-decoration: none; /*suppression de surlignement */
 }
@@ -77,6 +115,8 @@ a{
 .produit{
     background: cyan;
     width: 30%;
+    border-radius: 24px;
+    overflow: hidden;
 }
 
 .produit img{
@@ -89,3 +129,27 @@ a{
     gap: 16px;
     padding: 16px;
 }
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: azure;
+    background-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .hero h2{
+    color: purple;
+    font-size: 40px;
+  }
+
+  footer{
+    background: grey;
+  }
